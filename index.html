@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="script.js"></script>
+    <title>Lulu Santos</title>
+</head>
+
+<body>
+    <div class="background" id="inicio">
+        <header>
+            <ul>
+                <li>
+                    <a href="index.html#inicio">Início</a>
+                    <a href="index.html#Sobre">Sobre</a>
+                    <a href="index.html#Discografia">Musicas</a>
+                    <a href="index.html#Eventos">Eventos</a>
+                    <a href="index.html#Contato">Contato</a>
+                </li>
+            </ul>
+        </header>
+    </div> <!--background-->
+    <section class="Informações" id="Sobre">
+                <h3>Carreira</h3>
+                <img src="temposmodernos.jpg" alt="temposmodernos">
+                <h2>Lulu Santos</h2>
+                <p>Cantor, compositor, produtor musical e multi-instrumentista brasileiro. Começou sua carreira musical aos 12 anos, formando uma banda inspirada nos Beatles.</p>
+                <p>É um dos maiores nomes da música brasileira, com mais de 30 álbuns lançados e mais de 20 milhões de discos vendidos. Suas músicas são conhecidas por seu estilo pop-rock com influências de funk, soul e disco.</p>
+                <p>Ele nasceu em Copacabana, Rio de Janeiro, em 1953.</p>
+    </section>
+    </div> <!--Sobre-->
+    <section id="Discografia" class="section-4">
+        <h1>Álbuns</h1>
+        <div class="albuns-conteiner">
+            <div class="card-avaliações">
+                <h3>Tempos Modernos</h3>
+                <img src="temposmodernos.jpg" alt="temposmodernos">
+                <h2>Ano <span>1982</span></h2>
+                <p>Tempos Modernos</p>
+                <p>O Ritmo do Momento</p>
+                <p>Como uma Onda</p>
+            </div>
+            <div class="card-avaliações">
+                <h3>Toda Forma de Amor</h3>
+                <img src="todaformadeamor.jpeg" alt="todaformadeamor">
+                <h2>Ano <span>1988</span></h2>
+                <p>Toda Forma de Amor</p>
+                <p>Apenas Mais Uma de Amor</p>
+                <p>Um Pouco de Brilho</p>
+            </div>
+            <div class="card-avaliações">
+                <h3>Lulu</h3>
+                <img src="lulu.jpg" alt="avaliação">
+                <h2>Ano <span>1986</span></h2>
+                <p>A Cura</p>
+                <p>O Último Romântico</p>
+                <p>Você</p>
+            </div> <!--Albuns-->
+    </section> 
+    <section>
+        <div class="grid-container">
+            <div class="video-container">
+                <video controls class="grid-item" poster="thumb.jpg">
+                    <source src="video1.mp4" type="video/mp4">
+                    Seu navegador não suporta vídeo HTML5.
+                </video>
+            <div>
+                <div class="texto">
+                    <h2>Tempos Modernos</h2>
+                    <p>"Tempo Modernos" é uma icônica canção brasileira interpretada por Lulu Santos. Lançada em 1982 como parte do álbum homônimo, a música se tornou um dos maiores sucessos do artista e uma das canções mais emblemáticas da década de 1980 no Brasil.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+    <section class="section-5" id="Eventos">
+        <h2>Programação</h2>
+        <ul>
+            <li data-lat="-22.9711" data-lng="-43.3959">
+                <p>14 de Outubro de 2023</p>
+                <h3 class="local">Jeunesse Arena</h3>
+                <p>Rio de Janeiro-RJ</p>
+            </li>
+            <li data-lat="-23.5231979072" data-lng="-46.6737139718">
+                <p>15 de Outubro de 2023</p>
+                <h3 class="local">Allianz Parque</h3>
+                <p>São Paulo-SP</p>
+            </li>
+            <li data-lat="-19.8695" data-lng="-43.9654">
+                <p>21 de Outubro de 2023</p>
+                <h3 class="local">Esplanada do Mineirão</h3>
+                <p>Belo Horizonte-MG</p>
+            </li>
+            <li data-lat="-12.9672" data-lng="-38.5014">
+                <p>28 de Outubro de 2023</p>
+                <h3 class="local">Arena Fonte Nova</h3>
+                <p>Salvador-BA</p>
+            </li>
+        </ul>
+        <div id="map"></div>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8L0e-mP6g28UeMkNiwykLmuEYci-l6PY&callback=initMap" async defer></script>
+        <script src="script.js"></script>
+    </section> <!-- Eventos -->
+    <section class="section-8" id="formulariopracontato">
+        <h2>Contato</h2>
+        <p>Envie uma mensagem para Lulu Santos</p>
+    </section>
+       </div>
+    <section class="section-6" id="Contato">
+        <form>
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="seu nome" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="teuemail@exemplo.com" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" placeholder="mensagem" required></textarea>
+            </div>
+    
+            <button type="submit">Enviar</button>
+        </form>
+</body>
+<footer>
+    <div class="InformaçõesAdicionais">
+        <p>Copyright @ Equipe Lulu Santos</p>
+    </div>
+
+</footer>
+
+</html>
